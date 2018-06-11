@@ -1,0 +1,7 @@
+        // Added by Neev installer.
+        if ($guard == 'admin') {
+            if (Auth::guard($guard)->check()) {
+                return redirect(route('admin.home'));
+            }
+        }
+
